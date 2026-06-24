@@ -1,0 +1,155 @@
+
+AccessModifierOffset: -4
+
+AlignAfterOpenBracket: true
+
+AlignArrayOfStructures: Left
+
+AlignConsecutiveAssignments:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+  AlignCompound: true
+  PadOperators: true
+
+AlignConsecutiveBitFields:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+
+AlignConsecutiveDeclarations:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+  AlignFunctionDeclarations: true
+  AlignFunctionPointers: true
+
+AlignConsecutiveMacros:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+
+AlignConsecutiveShortCaseStatements:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+  AlignCaseColons: false
+
+AlignEscapedNewlines: Right
+
+AlignOperands: Align
+
+AlignTrailingComments:
+  Kind: Always
+  OverEmptyLines: 1
+  AlignPPAndNotPP: true
+
+AllowAllArgumentsOnNextLine: false
+
+AllowAllParametersOfDeclarationOnNextLine: false
+
+AllowShortBlocksOnASingleLine: Empty
+
+AllowShortCaseExpressionOnASingleLine: true
+AllowShortCaseLabelsOnASingleLine: true
+
+AllowShortCompoundRequirementOnASingleLine: true
+
+AllowShortEnumsOnASingleLine: false
+
+AllowShortFunctionsOnASingleLine: Empty
+
+AllowShortIfStatementsOnASingleLine: Never
+
+AllowShortLambdasOnASingleLine: Empty
+
+AllowShortLoopsOnASingleLine: false
+
+AllowShortNamespacesOnASingleLine: false
+
+BinPackArguments: false
+
+BinPackParameters: false
+
+BreakAfterAttributes: Leave
+
+BreakBeforeBraces: Custom
+
+BraceWrapping:
+  BeforeLambdaBody: true
+  AfterClass: false
+  AfterControlStatement: true
+  AfterEnum: true
+  AfterFunction: true
+  AfterNamespace: false
+  AfterStruct: false
+  AfterUnion: false
+  BeforeCatch: true
+  BeforeElse: true
+  IndentBraces: false
+  AfterObjCDeclaration: true
+  SplitEmptyRecord: false
+  SplitEmptyFunction: true
+  SplitEmptyNamespace: false
+  AfterExternBlock: true
+
+BreakBeforeTernaryOperators: true
+
+BreakConstructorInitializers: BeforeColon
+
+BreakTemplateDeclarations: Yes
+
+ColumnLimit: 100
+
+EmptyLineAfterAccessModifier: Leave
+EmptyLineBeforeAccessModifier: Leave
+
+EnumTrailingComma: Insert
+
+FixNamespaceComments: true
+
+IndentCaseBlocks: true
+IndentCaseLabels: true
+
+IndentExternBlock: Indent
+
+IndentPPDirectives: BeforeHash
+
+IndentRequiresClause: true
+
+InsertBraces: true
+
+IndentWidth: 4
+
+InsertNewlineAtEOF: true
+
+KeepEmptyLines:
+  AtEndOfFile: true
+  AtStartOfBlock: true
+  AtStartOfFile: true
+
+LambdaBodyIndentation: OuterScope
+
+NamespaceIndentation: All
+
+MaxEmptyLinesToKeep: 6
+
+PackConstructorInitializers: Never
+
+PenaltyBreakString: 1000000
+
+PenaltyReturnTypeOnItsOwnLine: 10000
+
+PointerAlignment: Left
+
+QualifierAlignment: Custom
+
+QualifierOrder: [static, constexpr, inline, const, volatile, type, restrict]
+
+RemoveEmptyLinesInUnwrappedLines: true
+
+SortIncludes: false
+
+SortUsingDeclarations: Never
+
+UseTab: Never

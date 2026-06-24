@@ -1,0 +1,20 @@
+[workspace]
+name = "QkMeta"
+channels = ["conda-forge"]
+platforms = ["linux-64", "win-64"]
+
+[dependencies]
+python = ">=3.12"
+cmake = ">=4.1"
+ninja = ">=1.13.2,<2"
+clang-format = "22.*"
+clang = "22.*"
+clangxx = "22.*"
+gcc = "15.*"
+gxx = "15.*"
+
+[target.linux-64.dependencies]
+gdb = "15.*"
+
+[tasks]
+build = "python scripts/create_solution.py"

@@ -1,0 +1,48 @@
+{
+    // Turn off format-on-save for everything
+    "editor.formatOnSave": false,
+    "[cpp]": {
+        "editor.formatOnSave": true
+    },
+    "[h]": {
+        "editor.formatOnSave": true
+    },
+    "[json]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "clangd.arguments": [
+        "--background-index",
+        "--clang-tidy",
+        "--header-insertion=never",
+        "--query-driver=${workspaceFolder}/.pixi/envs/default/bin/*"
+    ],
+    "cmake.debugConfig": {
+        "type": "cppdbg",
+        "request": "launch",
+        "MIMode": "gdb",
+        "setupCommands": [
+            {
+                "description": "Enable pretty printing",
+                "text": "-enable-pretty-printing",
+                "ignoreFailures": true
+            },
+            {
+                "description": "Add libstdc++ printer path",
+                "text": "python import sys; sys.path.insert(0, '${workspaceFolder}/.pixi/envs/default/share/gcc-15.2.0/python')"
+            },
+            {
+                "description": "Register libstdc++ printers",
+                "text": "python from libstdcxx.v6 import register_libstdcxx_printers; register_libstdcxx_printers(None)"
+            }
+        ]
+    }
+}
