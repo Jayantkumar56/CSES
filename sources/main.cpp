@@ -151,7 +151,7 @@ private:
 
 int main()
 {
-    TestRunner<TreeMatching> testRunner{};
+    TestRunner<TreeDistances1> testRunner{};
 
     TestResult testResults = testRunner.RunTest();
     testResults.Print();
