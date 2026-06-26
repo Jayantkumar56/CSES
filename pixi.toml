@@ -13,8 +13,13 @@ clangxx = "22.*"
 gcc = "15.*"
 gxx = "15.*"
 
+# Linux specific dependencies
 [target.linux-64.dependencies]
 gdb = "15.*"
+
+# Windows specific dependencies
+[target.win-64.dependencies]
+lld = "22.*"
 
 [tasks]
 build = "python scripts/create_solution.py"
