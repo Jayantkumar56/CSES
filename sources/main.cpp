@@ -29,8 +29,25 @@ struct TestResult {
         for (const auto& failedTest : FailedTests)
         {
             std::cout << "Test '" << failedTest.TestNumber << "' Failed!\n";
-            std::cout << "Expected  : " << failedTest.ExpectedOutput << "\n";
-            std::cout << "Got       : " << failedTest.ActualOutput << "\n";
+
+            if (failedTest.ExpectedOutput.size() < 300)
+            {
+                std::cout << "Expected  : " << failedTest.ExpectedOutput << "\n";
+            }
+            else
+            {
+                std::cout << "Expected  : " << failedTest.ExpectedOutput.substr(0, 50) << "...\n";
+            }
+
+            if (failedTest.ActualOutput.size() < 300)
+            {
+                std::cout << "Got       : " << failedTest.ActualOutput << "\n";
+            }
+            else
+            {
+                std::cout << "Got       : " << failedTest.ActualOutput.substr(0, 50) << "...\n";
+            }
+
             std::cout << "--------------------------------------------------------------\n\n";
         }
 
@@ -151,7 +168,7 @@ private:
 
 int main()
 {
-    TestRunner<TreeDistances1> testRunner{};
+    TestRunner<TreeDistances2> testRunner{};
 
     TestResult testResults = testRunner.RunTest();
     testResults.Print();
