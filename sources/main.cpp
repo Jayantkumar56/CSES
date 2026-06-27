@@ -164,7 +164,7 @@ private:
 
 int main()
 {
-    TestRunner<TreeDistances2> testRunner{};
+    TestRunner<CompanyQueries1> testRunner{};
 
     TestResult testResults = testRunner.RunTest();
     testResults.Print();
