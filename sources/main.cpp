@@ -1,5 +1,6 @@
 
 #include <test_data/tree_algorithms/tree_algorithms.hpp>
+#include <test_data/sliding_window_problems/sliding_window_problems.hpp>
 
 #include <iostream>
 #include <vector>
@@ -164,7 +165,7 @@ private:
 
 int main()
 {
-    TestRunner<CompanyQueries1> testRunner{};
+    TestRunner<SlidingWindowSum> testRunner{};
 
     TestResult testResults = testRunner.RunTest();
     testResults.Print();

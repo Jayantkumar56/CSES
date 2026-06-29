@@ -138,6 +138,8 @@ PackConstructorInitializers: Never
 
 PenaltyBreakString: 1000000
 
+PenaltyBreakAssignment: 1000
+
 PenaltyReturnTypeOnItsOwnLine: 10000
 
 PointerAlignment: Left
