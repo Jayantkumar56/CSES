@@ -27,12 +27,10 @@ else()
 
     if (CMAKE_BUILD_TYPE STREQUAL "Debug")
         target_compile_options(cses PRIVATE
-            -fsanitize=address,
-            undefined
+            -fsanitize=address,undefined
         )
         target_link_options(cses PRIVATE
-            -fsanitize=address,
-            undefined
+            -fsanitize=address,undefined
         )
     endif()
 endif()
