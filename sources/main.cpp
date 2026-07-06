@@ -189,7 +189,7 @@ private:
 
 int main()
 {
-    TestRunner<SlidingWindowXOR> testRunner;
+    TestRunner<SlidingWindowOR> testRunner;
 
     TestResult testResults = testRunner.RunTest();
     testResults.Print();
