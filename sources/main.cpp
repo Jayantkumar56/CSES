@@ -189,7 +189,7 @@ private:
 
 int main()
 {
-    TestRunner<SlidingWindowDistinctValues> testRunner;
+    TestRunner<SlidingWindowMode> testRunner;
 
     TestResult testResults = testRunner.RunTest();
     testResults.Print();

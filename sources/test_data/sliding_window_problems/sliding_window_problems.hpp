@@ -7,3 +7,4 @@
 #include "sliding_window_xor.hpp"
 #include "sliding_window_or.hpp"
 #include "sliding_window_distinct_values.hpp"
+#include "sliding_window_mode.hpp"
