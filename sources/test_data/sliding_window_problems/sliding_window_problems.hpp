@@ -9,3 +9,4 @@
 #include "sliding_window_distinct_values.hpp"
 #include "sliding_window_mode.hpp"
 #include "sliding_window_mex.hpp"
+#include "sliding_window_median.hpp"
