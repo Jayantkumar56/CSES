@@ -190,7 +190,7 @@ private:
 
 int main()
 {
-    TestRunner<DiceCombinations> testRunner;
+    TestRunner<MinimizingCoins> testRunner;
 
     TestResult testResults = testRunner.RunTest();
     testResults.Print();
