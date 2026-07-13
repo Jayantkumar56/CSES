@@ -1,6 +1,7 @@
 
 #include <test_data/tree_algorithms/tree_algorithms.hpp>
 #include <test_data/sliding_window_problems/sliding_window_problems.hpp>
+#include <test_data/dynamic_programming/dynamic_programming.hpp>
 
 #include <chrono>
 #include <iomanip>
@@ -189,7 +190,7 @@ private:
 
 int main()
 {
-    TestRunner<SlidingWindowMedian> testRunner;
+    TestRunner<DiceCombinations> testRunner;
 
     TestResult testResults = testRunner.RunTest();
     testResults.Print();
