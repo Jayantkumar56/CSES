@@ -190,7 +190,7 @@ private:
 
 int main()
 {
-    TestRunner<RemovingDigits> testRunner;
+    TestRunner<GridPaths1> testRunner;
 
     TestResult testResults = testRunner.RunTest();
     testResults.Print();
