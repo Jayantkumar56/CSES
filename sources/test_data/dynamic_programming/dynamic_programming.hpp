@@ -5,3 +5,4 @@
 #include "dice_combinations.hpp"
 #include "minimizing_coins.hpp"
 #include "coin_combinations_1.hpp"
+#include "coin_combinations_2.hpp"
