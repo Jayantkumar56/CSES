@@ -190,7 +190,7 @@ private:
 
 int main()
 {
-    TestRunner<GridPaths1> testRunner;
+    TestRunner<BookShop> testRunner;
 
     TestResult testResults = testRunner.RunTest();
     testResults.Print();
