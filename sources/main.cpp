@@ -190,7 +190,7 @@ private:
 
 int main()
 {
-    TestRunner<BookShop> testRunner;
+    TestRunner<ArrayDescription> testRunner;
 
     TestResult testResults = testRunner.RunTest();
     testResults.Print();

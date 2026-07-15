@@ -95,6 +95,8 @@ BraceWrapping:
 
 BreakBeforeTernaryOperators: true
 
+BreakBeforeBinaryOperators: NonAssignment
+
 BreakConstructorInitializers: BeforeColon
 
 BreakTemplateDeclarations: Yes
