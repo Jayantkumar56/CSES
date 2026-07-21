@@ -184,7 +184,7 @@ private:
 
 int main()
 {
-    TestRunner<CompanyQueries2> testRunner;
+    TestRunner<DistanceQueries> testRunner;
 
     TestResult testResults = testRunner.RunTest();
     testResults.Print();
