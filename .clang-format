@@ -76,7 +76,7 @@ BreakAfterAttributes: Leave
 BreakBeforeBraces: Custom
 
 BraceWrapping:
-  BeforeLambdaBody: true
+  BeforeLambdaBody: false
   AfterClass: false
   AfterControlStatement: true
   AfterEnum: true
@@ -130,7 +130,7 @@ KeepEmptyLines:
   AtStartOfBlock: true
   AtStartOfFile: true
 
-LambdaBodyIndentation: OuterScope
+LambdaBodyIndentation: Signature
 
 NamespaceIndentation: All
 

@@ -8,3 +8,4 @@
 #include "tree_distances_1.hpp"
 #include "tree_distances_2.hpp"
 #include "company_queries_1.hpp"
+#include "company_queries_2.hpp"

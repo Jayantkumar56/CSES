@@ -113,8 +113,7 @@ public:
         int testsPerformed = 0;
         int testsPassed    = 0;
 
-        ForEachDataSet([&](std::string_view input, std::string_view expectedOutput)
-        {
+        ForEachDataSet([&](std::string_view input, std::string_view expectedOutput) {
             ++testsPerformed;
 
             inputStream.str(std::string(input));
@@ -166,16 +165,11 @@ public:
 private:
     static std::string_view Trim(std::string_view str)
     {
-        auto start = std::ranges::find_if(str,
-                                          [](unsigned char ch)
-        {
+        auto start = std::ranges::find_if(str, [](unsigned char ch) {
             return !std::isspace(ch);
         });
 
-        auto end = std::ranges::find_if(str.rbegin(),
-                                        str.rend(),
-                                        [](unsigned char ch)
-        {
+        auto end = std::ranges::find_if(str.rbegin(), str.rend(), [](unsigned char ch) {
             return !std::isspace(ch);
         });
 
@@ -190,7 +184,7 @@ private:
 
 int main()
 {
-    TestRunner<ArrayDescription> testRunner;
+    TestRunner<CompanyQueries2> testRunner;
 
     TestResult testResults = testRunner.RunTest();
     testResults.Print();
