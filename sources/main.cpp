@@ -184,7 +184,7 @@ private:
 
 int main()
 {
-    TestRunner<DistanceQueries> testRunner;
+    TestRunner<EditDistance> testRunner;
 
     TestResult testResults = testRunner.RunTest();
     testResults.Print();
